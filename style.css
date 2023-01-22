@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loader-container{
+    width: 100px;
+    height: 4px;
+    background-color: #eee;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.loader{
+    width: 60%;
+    height: 100%;
+    background-color: tomato;
+    display: block;
+    animation: lineLoader ease-out 2s infinite;
+}
+.loading{
+    color: #eee;
+    margin: 10px auto;
+}
+@keyframes lineLoader{
+    0%{
+        transform: translateX(-50%);
+    }
+    50%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
